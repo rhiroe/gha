@@ -1,4 +1,6 @@
-FROM ruby:3.2.2-bullseye
+ARG RUBY_VERSION
+
+FROM ruby:$RUBY_VERSION-bullseye
 
 ENV LANG=C.UTF-8
 ENV TZ=Asia/Tokyo
